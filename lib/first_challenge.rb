@@ -1,3 +1,5 @@
+require 'pry'
+
 def first_challenge
   contacts = {
     "Jon Snow" => {
@@ -12,10 +14,10 @@ def first_challenge
       favorite_icecream_flavors: ["strawberry", "cookie dough", "mint chip"]
     }
   }
-
-  contacts["Freddy Mercury"].each do |info, data|
+binding
+contacts["Freddy Mercury"].each do |info, data|
       if info == :favorite_icecream_flavors
-        info.delete_if do |flavor|
+        :favorite_icecream_flavors.delete_if do |flavor|
           flavor == "strawberry"
         end
     end 
