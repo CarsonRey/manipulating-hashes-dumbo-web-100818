@@ -9,7 +9,6 @@ def second_challenge
   }
 
   
-  groceries.values.collect do |item|
-    item
-  end
+  groceries.values.flatten
+  
 end
