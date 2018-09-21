@@ -18,7 +18,7 @@ def first_challenge
    contacts.each do |person, data|
      data.each do |attribute, value|
        if attribute == :favorite_icecream_flavors
-         value.delete_if do |flavor|
+         attribute.delete_if do |flavor|
           flavor == "strawberry"
         end
         end
@@ -28,3 +28,4 @@ def first_challenge
   contacts
 end
 
+# :favorite_icecream_flavors is only going to be recognized as 'value' because
