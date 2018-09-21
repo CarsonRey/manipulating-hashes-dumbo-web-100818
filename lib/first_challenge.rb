@@ -15,8 +15,8 @@ def first_challenge
 
   contacts["Freddy Mercury"].each do |info|
       if info == :favorite_icecream_flavors
-        :favorite_icecream_flavors.each do |flavor|
-          delete_if 
+        :favorite_icecream_flavors.delete_if do |flavor|
+          flavor == "strawberry"
         end
     end 
   #remember to return your newly altered contacts hash!
