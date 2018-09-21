@@ -9,6 +9,6 @@ def second_challenge
   }
 
 
-  groceries.keys
+  groceries.values
 
 end
