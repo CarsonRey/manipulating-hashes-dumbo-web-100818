@@ -9,10 +9,6 @@ def second_challenge
   }
 
 
-  groceries.each do |key, value|
-    key.select do |value|
-      puts value
-    end
-  end
+  groceries.keys
 
 end
