@@ -28,4 +28,5 @@ def first_challenge
   contacts
 end
 
-# value  is only going to be recognized as 'value' because
+# attribute == :favorite_icecream_flavors
+# value == the ARRAY of iceream flavors so we can iterate over that and delete/ add what we need to. 
