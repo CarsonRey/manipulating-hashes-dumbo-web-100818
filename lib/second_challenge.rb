@@ -8,7 +8,7 @@ def second_challenge
    grains: ["rice", "pasta"]
   }
 
-binding pry
-  
+
+  groceries.key
 
 end
