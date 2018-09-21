@@ -1,3 +1,5 @@
+require 'pry'
+
 def first_challenge
   contacts = {
     "Jon Snow" => {
@@ -13,10 +15,18 @@ def first_challenge
     }
   }
 
-  #your code here
-
-
+   contacts.each do |person, data|
+     data.each do |attribute, value|
+       if attribute == :favorite_icecream_flavors
+         value.delete_if do |flavor|
+          flavor == "strawberry"
+        end
+        end
+    end 
+  end
   #remember to return your newly altered contacts hash!
   contacts
 end
 
+# attribute == :favorite_icecream_flavors
+# value == the ARRAY of iceream flavors so we can iterate over that and delete/ add what we need to. 
